@@ -237,56 +237,15 @@
       <div class="d-flex justify-content-between">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
           <i class="fas fa-calendar fa-3x mb-3 text-muted"></i>
-          <div> Now Open: "Helping Children With Loss" Support Group 
-		<br> Starts February 29th, 2020 at Hope Therapy Center
-		<br>1201 S. Victory Blvd. Burbank, CA
-		<br>10:00 am - 1:00 pm, 4 meetings, $400 
-		<br> Please request any sliding scale accomodation.
+          <div> Now Open: "Helping Children With Loss" Support Group</a> 
+		<br> Starts February 29th, 2020	
+		<br> 10:00 am - 1:00 pm, 4 Saturdays, $400 
+		<br> Sliding scale accomodation available
+		<a class="btn btn-dark btn-l" href="https://www.eventbrite.com/e/93432819077">Register Here</a>
+		<a class="d-block" href="https://www.eventbrite.com/e/88347063445">Free Information Session Feb 22 @ 10:00 am</a>
+
         </div> 
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
 
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#df6d27;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-sku_GfYzBPjYzmY3gg"
-  role="link"
->
-  Register
-</button>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_5ICJhB0wwE8ZyaXrGVVk9L0W');
-
-  var checkoutButton = document.getElementById('checkout-button-sku_GfYzBPjYzmY3gg');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      items: [{sku: 'sku_GfYzBPjYzmY3gg', quantity: 1}],
-
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: window.location.protocol + '//griefrecoverybyallison.com/success',
-      cancelUrl: window.location.protocol + '//griefrecoverybyallison.com/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
         </div>
 	<!-- iframe Google map embed -->
 	<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8UwubmOVwoARx2QJXMLDI0E&key=AIzaSyBuvvcBQbciJlWjhDObmgZkxOE1RQGe7J8" allowfullscreen></iframe>
