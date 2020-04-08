@@ -48,6 +48,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -10819,7 +10820,7 @@ header.masthead h1 {
   font-size: 1.2rem;
 }
 
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+#portfolio .container-fluid .portfolio-box: .portfolio-box-caption {
   opacity: 1;
 }
 ;
